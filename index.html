@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Riox Store dz متجر جزائري متخصص في بيع الاشتراكات الرقمية." />
+  <meta name="theme-color" content="#001838" />
+  <title>Riox Store dz | اشتراكات رقمية في الجزائر</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar" id="top">
+    <div class="topbar-inner">
+      <a class="brand-name" href="#home" aria-label="Riox Store dz">Riox Store dz</a>
+
+      <div class="topbar-actions">
+        <button class="icon-btn" id="searchToggle" type="button" aria-label="فتح البحث">
+          ⌕
+        </button>
+
+        <button class="icon-btn cart-btn" id="cartToggle" type="button" aria-label="السلة للعرض فقط">
+          🛒
+          <span id="cartCount">0</span>
+        </button>
+
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="فتح القائمة">
+          <i></i>
+          <i></i>
+          <i></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-panel" id="searchPanel" hidden>
+      <label for="siteSearch">البحث عن اشتراك</label>
+      <div class="search-field">
+        <input id="siteSearch" type="search" placeholder="ابحث عن ChatGPT أو Canva..." autocomplete="off" />
+        <button id="clearSearch" type="button">مسح</button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="drawer" id="drawer" hidden>
+    <div class="drawer-overlay" data-close-drawer></div>
+
+    <div class="drawer-panel">
+      <div class="drawer-head">
+        <strong>Riox Store dz</strong>
+        <button type="button" data-close-drawer aria-label="إغلاق">×</button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a href="#home">الرئيسية</a>
+        <a href="#categories">الأقسام</a>
+        <a href="#subscriptions">الاشتراكات</a>
+        <a href="#how-to-order">طريقة الطلب</a>
+        <a href="#payments">طرق الدفع</a>
+        <a href="#why-us">لماذا نحن</a>
+        <a href="#policies">السياسات</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <div class="drawer-contact">
+        <p>الدعم والطلبات عبر واتساب.</p>
+        <a class="btn btn-whatsapp" href="https://wa.me/213557235850" target="_blank" rel="noopener">
+          تواصل عبر واتساب
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="tag">متجر اشتراكات رقمية في الجزائر</span>
+          <h1>Riox Store dz</h1>
+          <h2>اشتراكات رقمية موثوقة في الجزائر</h2>
+          <p>
+            احصل على اشتراكاتك الرقمية المفضلة مثل ChatGPT Plus، Gemini Pro،
+            Canva Pro وCapCut Pro بأسعار مناسبة، تفعيل سريع، ودعم مباشر عبر واتساب.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#subscriptions">شاهد الاشتراكات</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/213557235850" target="_blank" rel="noopener">
+              اطلب عبر واتساب
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="logo-box">
+            <img src="assets/logo.png" alt="Riox Store dz" />
+            <span>RIOX</span>
+          </div>
+          <h3>طلب واضح قبل الدفع</h3>
+          <p>
+            السعر، المدة، طريقة التفعيل، الضمان وطريقة الدفع يتم تأكيدها مع العميل
+            عبر واتساب قبل إتمام الطلب.
+          </p>
+
+          <div class="hero-stats">
+            <div>
+              <strong>4</strong>
+              <small>منتجات</small>
+            </div>
+            <div>
+              <strong>5</strong>
+              <small>طرق دفع</small>
+            </div>
+            <div>
+              <strong>24h</strong>
+              <small>حسب التوفر</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <span>⚡</span>
+          <b>تفعيل سريع</b>
+        </div>
+        <div class="trust-item reveal">
+          <span>💬</span>
+          <b>دعم عبر واتساب</b>
+        </div>
+        <div class="trust-item reveal">
+          <span>💰</span>
+          <b>أسعار مناسبة</b>
+        </div>
+        <div class="trust-item reveal">
+          <span>🛡️</span>
+          <b>ضمان حسب نوع الاشتراك</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>الأقسام</span>
+          <h2>أقسام Riox Store dz</h2>
+          <p>المتجر متخصص فقط في الاشتراكات الرقمية المختارة، بدون ألعاب وبدون IPTV وبدون منتجات عشوائية.</p>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card reveal js-category" type="button" data-filter="ai">
+            <span>🤖</span>
+            <h3>الذكاء الاصطناعي</h3>
+            <p>اشتراكات تساعدك في الكتابة، الدراسة، البرمجة، البحث وصناعة المحتوى.</p>
+          </button>
+
+          <button class="category-card reveal js-category" type="button" data-filter="design">
+            <span>🎨</span>
+            <h3>التصميم والمونتاج</h3>
+            <p>أدوات للتصميم، المنشورات، الإعلانات، العروض، والمونتاج.</p>
+          </button>
+
+          <button class="category-card reveal js-category" type="button" data-filter="all">
+            <span>✨</span>
+            <h3>كل الاشتراكات</h3>
+            <p>اعرض جميع المنتجات المتوفرة حالياً في المتجر.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="subscriptions">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>الاشتراكات</span>
+          <h2>الاشتراكات المتوفرة</h2>
+          <p>اختر الاشتراك المناسب، راجع التفاصيل، ثم أرسل الطلب مباشرة عبر واتساب.</p>
+        </div>
+
+        <div class="products-toolbar reveal">
+          <button class="filter-btn active" type="button" data-filter="all">الكل</button>
+          <button class="filter-btn" type="button" data-filter="ai">الذكاء الاصطناعي</button>
+          <button class="filter-btn" type="button" data-filter="design">التصميم والمونتاج</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+
+        <p class="notice reveal">
+          الأسعار قابلة للتغيير حسب التوفر، ويتم تأكيد كل التفاصيل قبل الدفع عبر واتساب.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="how-to-order">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>طريقة الطلب</span>
+          <h2>كيف تطلب من Riox Store dz؟</h2>
+          <p>خطوات بسيطة وواضحة حتى تعرف ماذا سيحدث قبل الدفع وبعده.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <b>01</b>
+            <h3>اختر الاشتراك المناسب</h3>
+            <p>تصفح المنتجات واختر الاشتراك الذي تحتاجه.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <b>02</b>
+            <h3>اضغط على عرض التفاصيل</h3>
+            <p>راجع السعر، المدة، طريقة التفعيل والملاحظات.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <b>03</b>
+            <h3>اطلب عبر واتساب</h3>
+            <p>زر الطلب يفتح رسالة تلقائية باسم المنتج والسعر والمدة.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <b>04</b>
+            <h3>تأكيد التوفر</h3>
+            <p>نؤكد لك التوفر وطريقة التفعيل وطريقة الدفع المناسبة.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <b>05</b>
+            <h3>أرسل معلومات الطلب</h3>
+            <p>أرسل المعلومات المطلوبة حسب المنتج مع إثبات الدفع.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <b>06</b>
+            <h3>تفعيل الاشتراك</h3>
+            <p>بعد تأكيد الدفع يتم التفعيل حسب الضغط والتوفر.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="payments">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>الدفع</span>
+          <h2>طرق الدفع المتوفرة</h2>
+          <p>يتم تأكيد طريقة الدفع المناسبة مع العميل عبر واتساب قبل إتمام الطلب.</p>
+        </div>
+
+        <div class="payments-grid">
+          <div class="payment-card reveal">CCP</div>
+          <div class="payment-card reveal">بريدي موب</div>
+          <div class="payment-card reveal">فليكسي</div>
+          <div class="payment-card reveal">Binance</div>
+          <div class="payment-card reveal">RedotPay</div>
+        </div>
+
+        <p class="notice reveal">
+          لا يتم طلب أي معلومات حساسة غير ضرورية، ويتم إرسال تعليمات الدفع فقط عبر التواصل المباشر.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>لماذا نحن</span>
+          <h2>لماذا تختار Riox Store dz؟</h2>
+          <p>تعامل واضح، منتجات رقمية مختارة، وتواصل مباشر لتفادي الغموض قبل الشراء.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <span>⚡</span>
+            <h3>تفعيل سريع</h3>
+            <p>معالجة الطلبات في أقرب وقت حسب الضغط والتوفر.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <span>💬</span>
+            <h3>دعم مباشر عبر واتساب</h3>
+            <p>تواصل واضح قبل وبعد الطلب.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <span>💰</span>
+            <h3>أسعار مناسبة</h3>
+            <p>أسعار يتم تأكيدها حسب توفر الباقة.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <span>✅</span>
+            <h3>تعامل واضح</h3>
+            <p>توضيح التفاصيل قبل الدفع وإتمام الطلب.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <span>🎯</span>
+            <h3>منتجات رقمية مختارة</h3>
+            <p>تركيز فقط على الاشتراكات الرقمية المطلوبة.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <span>🛡️</span>
+            <h3>ضمان حسب نوع الاشتراك</h3>
+            <p>يتم شرح الضمان حسب الباقة وطريقة التفعيل.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="security">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>حماية المستخدم</span>
+          <h2>كيف نحمي معلوماتك؟</h2>
+          <p>الموقع واجهة تعريفية فقط ولا يحتوي على تسجيل دخول أو دفع إلكتروني أو قاعدة بيانات.</p>
+        </div>
+
+        <div class="security-grid">
+          <div class="security-card reveal">
+            <h3>لا تسجيل دخول</h3>
+            <p>لا نطلب إنشاء حساب داخل الموقع ولا نخزن كلمات مرور أو بيانات دخول.</p>
+          </div>
+
+          <div class="security-card reveal">
+            <h3>لا دفع داخل الموقع</h3>
+            <p>كل طرق الدفع يتم تأكيدها يدوياً عبر واتساب قبل الدفع.</p>
+          </div>
+
+          <div class="security-card reveal">
+            <h3>لا قاعدة بيانات</h3>
+            <p>هذه نسخة Front-End فقط، ولا يتم حفظ بيانات الزوار داخل الموقع.</p>
+          </div>
+
+          <div class="security-card reveal">
+            <h3>معلومات ضرورية فقط</h3>
+            <p>نطلب فقط المعلومات اللازمة لتفعيل الاشتراك حسب نوع المنتج.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="policies">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>السياسات</span>
+          <h2>سياسات المتجر</h2>
+          <p>سياسات واضحة لحماية العميل وتنظيم الطلبات. اضغط على أي سياسة لقراءتها كاملة.</p>
+        </div>
+
+        <div class="policies-grid">
+          <button class="policy-card reveal" type="button" data-policy="privacy">
+            <h3>سياسة الخصوصية</h3>
+            <p>كيف يتم التعامل مع معلومات العميل بشكل آمن وواضح.</p>
+          </button>
+
+          <button class="policy-card reveal" type="button" data-policy="terms">
+            <h3>الشروط والأحكام</h3>
+            <p>قواعد استخدام الموقع وطلب الاشتراكات الرقمية.</p>
+          </button>
+
+          <button class="policy-card reveal" type="button" data-policy="refund">
+            <h3>سياسة الضمان والاسترجاع</h3>
+            <p>شرح الضمان حسب نوع الباقة وطريقة التفعيل.</p>
+          </button>
+
+          <button class="policy-card reveal" type="button" data-policy="delivery">
+            <h3>سياسة التفعيل والتسليم</h3>
+            <p>مواعيد التفعيل، متطلبات الطلب، وحالات التأخير.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="faq">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>الأسئلة الشائعة</span>
+          <h2>أسئلة مهمة قبل الطلب</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>هل الاشتراكات مضمونة؟</span>
+              <b>+</b>
+            </button>
+            <div class="faq-answer">
+              نعم، يوجد ضمان حسب نوع الباقة وطريقة التفعيل، ويتم توضيح التفاصيل قبل الدفع.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>كم يستغرق التفعيل؟</span>
+              <b>+</b>
+            </button>
+            <div class="faq-answer">
+              غالباً من 10 دقائق إلى 24 ساعة حسب نوع المنتج والضغط والتوفر.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>ماذا أحتاج لإتمام الطلب؟</span>
+              <b>+</b>
+            </button>
+            <div class="faq-answer">
+              يختلف المطلوب حسب المنتج، لكن غالباً نحتاج الإيميل الشخصي، مدة الاشتراك، وإثبات الدفع.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>هل الأسعار ثابتة؟</span>
+              <b>+</b>
+            </button>
+            <div class="faq-answer">
+              الأسعار قد تتغير حسب توفر الاشتراك ومدة الباقة، ويتم تأكيد السعر عبر واتساب قبل الدفع.
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-question" type="button">
+              <span>هل توجد ألعاب أو شحن ألعاب؟</span>
+              <b>+</b>
+            </button>
+            <div class="faq-answer">
+              لا، Riox Store dz متخصص فقط في الاشتراكات الرقمية المختارة.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-box reveal">
+        <span>تواصل معنا</span>
+        <h2>جاهز تطلب اشتراكك؟</h2>
+        <p>تواصل معنا عبر واتساب أو تابع صفحاتنا لمعرفة الجديد والعروض المتوفرة.</p>
+
+        <div class="social-links">
+          <a href="https://wa.me/213557235850" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.instagram.com/riox_ads?igsh=aDFkMDczMzY1cnRv" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61572103543791" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://t.me/+213557235850" target="_blank" rel="noopener">Telegram</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Riox Store dz © 2025</h2>
+        <p>متجر جزائري متخصص في بيع الاشتراكات الرقمية.</p>
+        <p>دعم مباشر عبر واتساب — تفعيل سريع — أسعار مناسبة.</p>
+      </div>
+
+      <div>
+        <h3>روابط مهمة</h3>
+        <button class="footer-link" type="button" data-policy="privacy">سياسة الخصوصية</button>
+        <button class="footer-link" type="button" data-policy="terms">الشروط والأحكام</button>
+        <button class="footer-link" type="button" data-policy="refund">الضمان والاسترجاع</button>
+        <button class="footer-link" type="button" data-policy="delivery">التفعيل والتسليم</button>
+      </div>
+
+      <div>
+        <h3>وسائل التواصل</h3>
+        <a href="https://wa.me/213557235850" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/riox_ads?igsh=aDFkMDczMzY1cnRv" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61572103543791" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://t.me/+213557235850" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="productModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeProductModal" type="button" aria-label="إغلاق">×</button>
+      <div id="productModalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="policyModal" hidden>
+    <div class="modal-card policy-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closePolicyModal" type="button" aria-label="إغلاق">×</button>
+      <div id="policyModalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="cartModal" hidden>
+    <div class="modal-card cart-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeCartModal" type="button" aria-label="إغلاق">×</button>
+      <div class="cart-content">
+        <h2>السلة للعرض فقط</h2>
+        <p>
+          هذه النسخة واجهة Front-End فقط. السلة لا تحفظ بيانات ولا تنشئ طلباً حقيقياً.
+          لإتمام الطلب اضغط على زر واتساب داخل المنتج.
+        </p>
+        <div id="cartPreview"></div>
+      </div>
+    </div>
+  </div>
+
+  <a class="floating-whatsapp" href="https://wa.me/213557235850" target="_blank" rel="noopener">
+    واتساب
+  </a>
+
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="الرجوع للأعلى">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
